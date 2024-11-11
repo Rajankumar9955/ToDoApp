@@ -7,11 +7,21 @@ const App=()=>{
   const [edId, setEdID]=useState("")
   const mydata=useState((state)=>state.todo.task)
   const mydis=useDispatch();
-  
+
   console.log(mydata)
 
   let sno=0;
   const delTask=(id)=>{
     mydis(recDelete(id))
   }
+
 }
+const ans=mydata.map((key)=>{
+  sno++;
+  return(
+    <>
+    <tr></tr>
+    
+    </>
+  )
+})
