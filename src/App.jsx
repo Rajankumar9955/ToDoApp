@@ -26,6 +26,14 @@ const ans=mydata.map((key)=>{
         {key.status? <span style={{color:"red",textDecoration:"line-through"}}>{key.data}</span>:key.data}
       </td>
       <td><button onClick={()=>{delTask(key.id)}}>Delete</button></td>
+      <td>
+          {key.status?(
+            <button onClick={()=>{taskUncomplete(key.id)}}>Uncomplete</button>
+          ):(
+            <button onClick={()=>{taskComp(key.id)}}>Complete</button>
+          )
+          }
+      </td>
     </tr>
     
     </>
