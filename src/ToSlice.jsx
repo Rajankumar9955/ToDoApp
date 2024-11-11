@@ -10,3 +10,5 @@ const ToSlice=createSlice({
         },
     }
 })
+export default ToSlice.reducer;
+export const{addTask}=ToSlice.actions
