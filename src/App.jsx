@@ -31,11 +31,12 @@ const ans=mydata.map((key)=>{
             <button onClick={()=>{taskUncomplete(key.id)}}>Uncomplete</button>
           ):(
             <button onClick={()=>{taskComp(key.id)}}>Complete</button>
-          )
-          }
+          )}
+      </td>
+      <td>
+        <button onClick={()=>{dataEdit(key.id,key.data)}}>Edit Data</button>
       </td>
     </tr>
-    
     </>
   )
 })
