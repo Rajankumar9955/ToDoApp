@@ -20,7 +20,13 @@ const ans=mydata.map((key)=>{
   sno++;
   return(
     <>
-    <tr></tr>
+    <tr>
+      <td>{sno}</td>
+      <td>
+        {key.status? <span style={{color:"red",textDecoration:"line-through"}}>{key.data}</span>:key.data}
+      </td>
+      <td><button onClick={()=>{delTask(key.id)}}>Delete</button></td>
+    </tr>
     
     </>
   )
