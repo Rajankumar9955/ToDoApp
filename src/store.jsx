@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
 
-import ToDoRed from "./ToSlice"
+import todoRed from "./ToDoSlice"
 const store=configureStore({
     reducer:{
-        todo:ToDoRed
+        todo:todoRed
     }
 })
 export default store
