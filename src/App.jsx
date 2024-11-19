@@ -23,11 +23,11 @@ import { useSelector,useDispatch } from "react-redux";
         mydis(taskUnComplete(id))
     }
 
-    // const dataEdit=(id,data)=>{
-    //     setTxtval(data)
-    //     setEdbtn(false)
-    //     setEdID(id)
-    // }
+    const dataEdit=(id,data)=>{
+        setTxtval(data)
+        setEdbtn(false)
+        setEdID(id)
+    }
    
     // const editSave=()=>{
     //     mydis(editDataSave({id:edId,data:txtval}))
