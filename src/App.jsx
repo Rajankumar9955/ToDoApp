@@ -19,9 +19,9 @@ import { useSelector,useDispatch } from "react-redux";
         mydis(taskComplete(id))
     }
 
-    // const taskUncomp=(id)=>{
-    //     mydis(taskUnComplete(id))
-    // }
+    const taskUncomp=(id)=>{
+        mydis(taskUnComplete(id))
+    }
 
     // const dataEdit=(id,data)=>{
     //     setTxtval(data)
