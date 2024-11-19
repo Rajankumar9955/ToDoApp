@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 
 const App=()=>{
   const[txtval,setTxtval]=useState("");
-  const[edBtn,secti]
+  const[edBtn,]
   return(
     <>
     <h1>To Do APP</h1>
