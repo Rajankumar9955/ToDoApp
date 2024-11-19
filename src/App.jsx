@@ -19,21 +19,21 @@ import { useSelector,useDispatch } from "react-redux";
         mydis(taskComplete(id))
     }
 
-    const taskUncomp=(id)=>{
-        mydis(taskUnComplete(id))
-    }
+    // const taskUncomp=(id)=>{
+    //     mydis(taskUnComplete(id))
+    // }
 
-    const dataEdit=(id,data)=>{
-        setTxtval(data)
-        setEdbtn(false)
-        setEdID(id)
-    }
+    // const dataEdit=(id,data)=>{
+    //     setTxtval(data)
+    //     setEdbtn(false)
+    //     setEdID(id)
+    // }
    
-    const editSave=()=>{
-        mydis(editDataSave({id:edId,data:txtval}))
-        setEdbtn(true)
-        setTxtval("");
-    }
+    // const editSave=()=>{
+    //     mydis(editDataSave({id:edId,data:txtval}))
+    //     setEdbtn(true)
+    //     setTxtval("");
+    // }
     const ans=mydata.map((key)=>{
         sno++;
         return(
