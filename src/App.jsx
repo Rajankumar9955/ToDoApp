@@ -1,9 +1,19 @@
 import { useState } from "react"
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const App=()=>{
   const[txtval,setTxtval]=useState("");
-  const[edBtn,]
+  const[edBtn,setEdbtn]=useState(true);
+  const [edId,setEdID]=useState("");
+  const mydata=useSelector((state)=>state.todo.task);
+  const mydis=useDispatch();
+
+  console.log(useDispatch);
+
+  console.log(mydata);
+
+  let sno=0;
+  
   return(
     <>
     <h1>To Do APP</h1>
