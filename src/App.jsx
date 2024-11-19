@@ -29,11 +29,11 @@ import { useSelector,useDispatch } from "react-redux";
         setEdID(id)
     }
    
-    // const editSave=()=>{
-    //     mydis(editDataSave({id:edId,data:txtval}))
-    //     setEdbtn(true)
-    //     setTxtval("");
-    // }
+    const editSave=()=>{
+        mydis(editDataSave({id:edId,data:txtval}))
+        setEdbtn(true)
+        setTxtval("");
+    }
     const ans=mydata.map((key)=>{
         sno++;
         return(
