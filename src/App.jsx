@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 const App=()=>{
   const[txtval,setTxtval]=useState("");
   const[edBtn,setEdbtn]=useState(true);
-  const [edId,setEdID]=useState("");
+  // const [edId,setEdID]=useState("");
   const mydata=useSelector((state)=>state.todo.task);
   const mydis=useDispatch();
 
