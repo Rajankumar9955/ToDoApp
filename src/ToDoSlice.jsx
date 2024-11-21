@@ -9,7 +9,7 @@ const ToDoSlice=createSlice({
             state.task.push(action.payload);
         },
         recDelete:(state,actions)=>{
-            state.task=state.task.filter(item=item.id!=actions.payload);
+            state.task=state.task.filter(item=>item.id!=actions.payload);
         },
         taskComplete:(state,actions)=>{
             for(var i=0; i<state.task.length; i++)
