@@ -23,7 +23,7 @@ const ToDoSlice=createSlice({
         taskUnComplete:(state,actions)=>{
             for(var i=0; i<state.task.length; i++)
             {
-                if(state.task[i]==actions.payload)
+                if(state.task[i].id==actions.payload)
                 {
                     state.task[i].status=false;
                 }
