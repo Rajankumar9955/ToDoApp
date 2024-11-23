@@ -40,6 +40,5 @@ const ToDoSlice=createSlice({
         }
     }
 })
-
 export default ToDoSlice.reducer;
 export const{addTask,recDelete,taskComplete,taskUnComplete,editDataSave}=ToDoSlice.actions
