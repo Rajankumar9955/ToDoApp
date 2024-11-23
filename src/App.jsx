@@ -34,6 +34,7 @@ import { useSelector,useDispatch } from "react-redux";
         setEdbtn(true)
         setTxtval("");
     }
+    
     const ans=mydata.map((key)=>{
         sno++;
         return(
