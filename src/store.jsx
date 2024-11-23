@@ -6,5 +6,4 @@ const store=configureStore({
         todo:todoRed
     }
 })
-
 export default store
