@@ -51,9 +51,9 @@ import { addTask,recDelete,taskComplete,taskUnComplete,editDataSave } from "./To
                 <td><button onClick={()=>{delTask(key.id)}}>Delete</button></td>
                 <td>
                     {key.status?(
-                        <button onClick={()=>{taskUncomp(key.id)}}><img src={img1} style={{height:"35px", width:"50px",marginLeft:"1px"}} /></button>
+                        <button onClick={()=>{taskUncomp(key.id)}}> <a href="#"><img src={img1} style={{height:"35px", width:"50px",marginLeft:"1px"}} /></a></button>
                     ):(
-                        <button onClick={()=>{taskComp(key.id)}}><img src={img2} style={{height:"35px", width:"50px",marginLeft:"1px"}} /></button>
+                        <button onClick={()=>{taskComp(key.id)}}> <a href="#"> <img src={img2} style={{height:"35px", width:"50px",marginLeft:"1px"}} /></a></button>
                     )}
                 </td>
                 <td>
