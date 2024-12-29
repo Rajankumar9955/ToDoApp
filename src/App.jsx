@@ -3,7 +3,8 @@ import { useSelector,useDispatch } from "react-redux";
 
 import { addTask,recDelete,taskComplete,taskUnComplete,editDataSave } from "./ToDoSlice";
 
- import img from "./images/wrong.jpeg";
+ import img1 from "./images/wrong.jpeg";
+ import img2 from "./images/right.png";
  const App=()=>{
     const [txtval, setTxtval]=useState("")
     const [edBtn, setEdbtn]=useState(true);
@@ -50,9 +51,9 @@ import { addTask,recDelete,taskComplete,taskUnComplete,editDataSave } from "./To
                 <td><button onClick={()=>{delTask(key.id)}}>Delete</button></td>
                 <td>
                     {key.status?(
-                        <button onClick={()=>{taskUncomp(key.id)}}><img src={img} style={{height:"35px", width:"50px",marginLeft:"1px"}} /></button>
+                        <button onClick={()=>{taskUncomp(key.id)}}><img src={img1} style={{height:"35px", width:"50px",marginLeft:"1px"}} /></button>
                     ):(
-                        <button onClick={()=>{taskComp(key.id)}}>Complete</button>
+                        <button onClick={()=>{taskComp(key.id)}}><img src={img2} style={{height:"35px", width:"50px",marginLeft:"1px"}} /></button>
                     )}
                 </td>
                 <td>
